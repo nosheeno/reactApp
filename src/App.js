@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import AppWrapper from "./appcss";
-import DefaultHeader from "./containers/Header/";
+
 import { Layout } from "antd";
 import "antd/dist/antd.css";
+
+import DefaultHeader from "./containers/Header/";
+import Slider from "./containers/Slider/";
+import Services from "./containers/Services/";
 
 const { Header, Footer, Sider, Content } = Layout;
 class App extends Component {
@@ -10,7 +13,10 @@ class App extends Component {
     return (
       <Layout>
         <DefaultHeader />
-        <Content />
+        <Content>
+          <Slider />
+          <Services />
+        </Content>
         <Footer />
       </Layout>
     );

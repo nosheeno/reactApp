@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Menu } from "antd";
 
-const HeaderWrapper = styled.div`
-  position: relative;
-  background-color: pink;
+const StyledMenu = styled(Menu)`
+  background-color: dark;
+  text-align: right;
 `;
-export default HeaderWrapper;
+export default StyledMenu;
