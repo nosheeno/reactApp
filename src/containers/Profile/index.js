@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { Row, Col } from "antd";
-import Img from "../../images/about-alex.jpg";
+import Img from "../../img/about-alex.jpg";
 
-import ProfileWrapper from "./styles";
+import { ProfileWrapper } from "./styles";
 
 class Profile extends Component {
   render() {
     return (
       <ProfileWrapper>
-        <Row>
-          <Col span={10} offset={1}>
-            <img src={Img} />
+        <Row type="flex" justify="start" align="middle">
+          <Col xs={24} sm={24} md={24} lg={12} xl={12}>
+            <img src={Img} style={{ width: "100%", height: "auto" }} />
           </Col>
-          <Col span={10}>
+          <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <h3 className="about">
               I'm <span className="aboutSpan">Alex</span>
             </h3>

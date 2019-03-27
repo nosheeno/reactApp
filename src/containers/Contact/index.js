@@ -9,7 +9,7 @@ class Contact extends Component {
     return (
       <ContactWrapper>
         <Row>
-          <Col span={10} offset={7}>
+          <Col xm={24} sm={24} md={24} lg={24}>
             <h2 className="contactHeading">
               Contact<span className="contactSpan"> Me</span>
             </h2>
@@ -17,15 +17,25 @@ class Contact extends Component {
             <p className="contactPara">
               Mauris auctor enim in justo euismod imperdiet
             </p>
-            <ContactInput placeholder="Name" />
-
-            <ContactInput placeholder="Email" />
-
-            <ContactInput placeholder="Message" />
-            <br />
-            <DefaultButton>SEND</DefaultButton>
           </Col>
         </Row>
+        <Row>
+          <Col xm={24} sm={24} md={24} lg={24}>
+            <ContactInput placeholder="Name" />
+          </Col>
+        </Row>
+        <Row>
+          <Col xm={24} sm={24} md={24} lg={24}>
+            <ContactInput placeholder="Email" />
+          </Col>
+        </Row>
+        <Row>
+          <Col xm={24} sm={24} md={24} lg={24}>
+            <ContactInput placeholder="Message" />
+          </Col>
+        </Row>
+        <br />
+        <DefaultButton btnprim>SEND</DefaultButton>
       </ContactWrapper>
     );
   }

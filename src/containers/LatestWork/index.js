@@ -1,90 +1,101 @@
 import * as React from "react";
-import { Row, Col, Card } from "antd";
-import LatestWrapper from "./styles";
+import { Row, Col } from "antd";
+import { LatestWrapper, CustmDiv } from "./styles";
 
 class LatestWork extends React.Component {
   render() {
     return (
       <LatestWrapper>
-        <h2 className="latestHeading">
-          Latest<span className="latestSpan"> Works</span>
-        </h2>
         <Row>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processOne.jpg")}
-                />
-              }
-            />
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processTwo.jpg")}
-                />
-              }
-            />
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processThree.jpg")}
-                />
-              }
-            />
+          <Col span={24}>
+            <h2 className="latestHeading">
+              Latest<span className="latestSpan"> Works</span>
+            </h2>
           </Col>
         </Row>
-        <Row>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processFour.jpg")}
-                />
-              }
-            />
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processFive.jpg")}
-                />
-              }
-            />
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              style={{ width: 400, height: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src={require("../../images/processSix.jpg")}
-                />
-              }
-            />
-          </Col>
-        </Row>
+        <CustmDiv>
+          <Row  >
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processOne.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processTwo.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processThree.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processFour.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processFive.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+            <Col xs={24} sm={24} md={10} lg={8} xl={8}>
+              <div className="imgBlog">
+                <a href="#">
+                  <img
+                    className="gutter-box"
+                    alt="example"
+                    src={require("../../img/processSix.jpg")}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+                <div className="overlay"></div>
+              </div>
+            </Col>
+          </Row>
+        </CustmDiv>
       </LatestWrapper>
     );
   }

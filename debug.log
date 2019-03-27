@@ -1,2 +1,8 @@
 [0213/192123.900:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: The operation completed successfully. (0x0)
 [0214/173547.288:ERROR:http_transport_win.cc(360)] WinHttpReceiveResponse: The operation completed successfully. (0x0)
+[0218/123656.805:ERROR:process_info.cc(359)] UncheckedAllocate
+[0305/181835.091:ERROR:process_memory_win.cc(73)] ReadMemory at 0x92b7361400 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0325/130628.506:ERROR:process_info.cc(359)] UncheckedAllocate
+[0325/131058.688:ERROR:process_info.cc(359)] UncheckedAllocate
+[0325/131058.884:ERROR:process_info.cc(359)] UncheckedAllocate
+[0325/131331.845:ERROR:process_info.cc(359)] UncheckedAllocate
