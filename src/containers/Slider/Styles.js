@@ -18,11 +18,11 @@ font-family: 'Raleway', sans-serif;
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
   }
   .sliderHeading {    
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     text-transform: capitalize;
     font-weight: 700;
@@ -37,19 +37,6 @@ font-family: 'Raleway', sans-serif;
   .icon {
     height : 5rem;
     width : 5rem;
-  }
-  .cardHeading {
-    font-size: 3rem;
-    color: #B09A68;
-    text-transform: capitalize;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-  .cardPara {
-    font-size : 5rem;
-    color : #C7C7D5;
-    text-align: center;
   }
 `;
 

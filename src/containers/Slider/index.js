@@ -15,7 +15,7 @@ class Slider extends React.Component {
               <img src={Img}></img>
               <h2 className="sliderHeading ml">
                 Hello, I'm
-              <span className="spanHeading "> Web and graphic Designer</span><br/>living in Gilgit
+              <span className="spanHeading "> Web and graphic Designer</span><br/>living in Gilgit-Baltistan
               </h2>
               <DefaultButton className="ml">See Works</DefaultButton>
               <DefaultButton primary>Contect Me</DefaultButton>

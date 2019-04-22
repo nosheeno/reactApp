@@ -3,15 +3,6 @@ import styled from "styled-components";
 export const LatestWrapper = styled.div`
   background-color: transparent;
   font-family: 'Raleway', sans-serif;
-  .latestHeading {
-    font-weight: 700;
-    color: #B09A68;
-    font-size : 3rem;
-    text-align : center;
-  }
-  .latestSpan{  
-    color: #2A2A2E;
-  }
   .gutter-box{
     padding: 10px 10px 10px 10px;
   }
@@ -20,14 +11,14 @@ export const LatestWrapper = styled.div`
   }
   .overlay {
     position: absolute;
-    width: 95.5%;
-    height: 93%;
-    background: #b09a68;
+    width: 83%;
+    height: 80%;
+    background: #000000;
     cursor: pointer;
     opacity: 0;
     z-index: 9;
-    top: 9px;
-    left: 9px;
+    top: 32px;
+    left: 30px;
       }
  
 `;

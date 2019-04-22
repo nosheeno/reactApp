@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Row, Col } from "antd";
-import { ProcessWrapper, CustmDiv } from "./styles";
+import { ProcessWrapper, CustmDiv, ContentWrapper } from "./styles";
+import {Heading2, Content, Para} from "../../components/heading/index";
 
 export class Process extends React.Component {
   render() {
@@ -8,36 +9,34 @@ export class Process extends React.Component {
       <ProcessWrapper>
         <Row>
           <Col span={24}>
-            <h2 className="processHeading">
-              Working <span className="processSpan">Process</span>
-            </h2>
+            <Heading2 title="working" span="process"/>          
           </Col>
         </Row>
         <CustmDiv>
           <Row>
             <Col xs={24} sm={24} md={12} lg={6} xl={6}>
-              <h4 className="processNum">
-                01<span className="processDesign"> Sketch</span>
-              </h4>
-              <h4 className="processPara">Nunc sodales lacus nec felis suscipit dictum.</h4>
+              <ContentWrapper>
+                <Content para="01" span="Sketch"/>
+                <Para para="Nunc sodales lacus nec felis suscipit dictum."/>
+              </ContentWrapper>              
             </Col>
             <Col xs={24} sm={24} md={12} lg={6} xl={6}>
-              <h4 className="processNum">
-                02<span className="processDesign"> Design</span>
-              </h4>
-              <h4 className="processPara">Nunc sodales lacus nec felis suscipit dictum.</h4>
+              <ContentWrapper>
+                <Content para="02" span="Design"/>
+                <Para para="Nunc sodales lacus nec felis suscipit dictum."/> 
+              </ContentWrapper>             
             </Col>
             <Col xs={24} sm={24} md={12} lg={6} xl={6}>
-              <h4 className="processNum">
-                03<span className="processDesign"> Develop</span>
-              </h4>
-              <h4 className="processPara">Nunc sodales lacus nec felis suscipit dictum.</h4>
+              <ContentWrapper>
+                <Content para="03" span="Develop"/>
+                <Para para="Nunc sodales lacus nec felis suscipit dictum."/>
+              </ContentWrapper>              
             </Col>
             <Col xs={24} sm={24} md={12} lg={6} xl={6}>
-              <h4 className="processNum">
-                04<span className="processDesign"> End Product</span>
-              </h4>
-              <h4 className="processPara">Nunc sodales lacus nec felis suscipit dictum.</h4>
+              <ContentWrapper>
+                <Content para="04" span="End Product"/>
+                <Para para="Nunc sodales lacus nec felis suscipit dictum."/>
+             </ContentWrapper>  
             </Col>
           </Row>
         </CustmDiv>

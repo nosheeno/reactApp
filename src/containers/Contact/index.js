@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import ContactWrapper from "./styles";
 import { ContactInput } from "../../components/Input";
 import DefaultButton from "../../components/Button";
+import {Heading2, Para} from "../../components/heading/index";
 
 class Contact extends Component {
   render() {
@@ -10,13 +11,10 @@ class Contact extends Component {
       <ContactWrapper>
         <Row>
           <Col xm={24} sm={24} md={24} lg={24}>
-            <h2 className="contactHeading">
-              Contact<span className="contactSpan"> Me</span>
-            </h2>
+            <Heading2 title='contact' span='me'/>
+            
             <h3 className="talk">Let's Talk</h3>
-            <p className="contactPara">
-              Mauris auctor enim in justo euismod imperdiet
-            </p>
+            <Para para='Mauris auctor enim in justo euismod imperdiet'/>           
           </Col>
         </Row>
         <Row>
@@ -35,7 +33,7 @@ class Contact extends Component {
           </Col>
         </Row>
         <br />
-        <DefaultButton btnprim>SEND</DefaultButton>
+        <DefaultButton btnprim>Send</DefaultButton>
       </ContactWrapper>
     );
   }

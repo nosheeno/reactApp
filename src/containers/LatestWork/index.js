@@ -1,6 +1,14 @@
 import * as React from "react";
 import { Row, Col } from "antd";
 import { LatestWrapper, CustmDiv } from "./styles";
+import {Heading2} from "../../components/heading/index";
+import { Gallery } from "../../components/gallery/index"
+import img1 from "../../img/processOne.jpg";
+import img2 from "../../img/processTwo.jpg";
+import img3 from "../../img/processThree.jpg";
+import img4 from "../../img/processFour.jpg";
+import img5 from "../../img/processFive.jpg";
+import img6 from "../../img/processSix.jpg";
 
 class LatestWork extends React.Component {
   render() {
@@ -8,91 +16,29 @@ class LatestWork extends React.Component {
       <LatestWrapper>
         <Row>
           <Col span={24}>
-            <h2 className="latestHeading">
-              Latest<span className="latestSpan"> Works</span>
-            </h2>
+            <Heading2 title='Latest' span='Works'/>            
           </Col>
         </Row>
         <CustmDiv>
           <Row  >
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processOne.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img1}/>              
             </Col>
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processTwo.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img2}/> 
             </Col>
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processThree.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img3}/> 
             </Col>
 
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processFour.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img4}/> 
             </Col>
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processFive.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img5}/> 
             </Col>
             <Col xs={24} sm={24} md={10} lg={8} xl={8}>
-              <div className="imgBlog">
-                <a href="#">
-                  <img
-                    className="gutter-box"
-                    alt="example"
-                    src={require("../../img/processSix.jpg")}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </a>
-                <div className="overlay"></div>
-              </div>
+              <Gallery image={img6}/> 
             </Col>
           </Row>
         </CustmDiv>

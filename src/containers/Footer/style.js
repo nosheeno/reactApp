@@ -5,11 +5,8 @@ const { Footer } = Layout;
 export const FooterWrapper = styled(Footer)`
   background-color: #2a2a2e;
   font-family: 'Raleway', sans-serif;
-  .footerHeading {
-    text-align: center;
-    color: #b09a68;
-    font-weight: 700;
-  font-size: 3rem;
+  .foo {
+    color: white ;
   }
   .imgBlog:hover .overlay {
     opacity: 0.5;
@@ -24,16 +21,11 @@ export const FooterWrapper = styled(Footer)`
     z-index: 9;
     top: 0px;
       }
-
-  }
-  .footerSpan {
-    font-size: 2.5;
-    color: #fff;
-    text-align: center;
   }
   .icons {
     text-align: center;
     color: "white";
+    cursor: pointer;
   }
   .ml{
     margin: 32px 0 0 22px !important;
